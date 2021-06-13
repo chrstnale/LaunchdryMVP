@@ -1,0 +1,31 @@
+﻿CREATE TABLE [dbo].[ListLaundry](
+   ID              INTEGER  NOT NULL PRIMARY KEY 
+  ,Name            VARCHAR(44) NOT NULL
+  ,Alamat          VARCHAR(142) NOT NULL
+  ,No_Telepon      VARCHAR(15) NOT NULL
+  ,Rating          NUMERIC(3,1) NOT NULL
+  ,Jumlah_Reviewer VARCHAR(5) NOT NULL
+  ,Jam_buka        VARCHAR(5) NOT NULL
+  ,Jam_tutup       VARCHAR(5) NOT NULL
+);
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (1,'EXO Laundry Jogja','Jl. Kaliurang No.Km.5, Karang Wuni, Caturtunggal, Depok Sub-District, Sleman Regency, Special Region of Yogyakarta 55281','0813-9138-9256',4.7,'146','07:00','22:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (2,'Jogja Laundry','Jl. Wulung No.3, Papringan, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281','0898-4424-000',5.0,'86','08:00','20:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (3,'Melia Laundry & Drycleaning counter Amplaz','Jl. Laksda Adisucipto, Ambarukmo, Demangan, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281','(0274) 488157',4.3,'12','07:00','20:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (4,'CleanPro Express Laundry Yogya','Jl. Bougenville No.8, Karang Gayam, Caturtunggal, Kec. Depok, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55281','0822-3601-1342',4.5,'175','00:00','00:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (5,'Laundry Express Jogja','Jl. Kaliwaru No.27, Kaliwaru, Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281','0819-7776-7474',5.0,'1,065','07:30','20:30');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (6,'Laundry Kiloan','Jl Cendrawasih,Demangan,Gondokusuman, Mrican, Caturtunggal, Kec. Depok, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55221','0858-4233-1094',3.5,'2','07:00','23:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (7,'Murah Laundry','Jl. Ganesha II, Gendeng GK.4/958, Baciro, Kec. Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55225','0857-4735-1346',5.0,'3','06:00','22:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (8,'CleanPro Combo','Jl. Colombo Yogyakarta No.120, Karang Malang, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281','-',4.6,'213','00:00','00:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (9,'Super Laundry Jogja','Jl. Sorowajan Baru No.1 no 22, Jomblangan, Banguntapan, Kec. Banguntapan, Bantul, Daerah Istimewa Yogyakarta 55198','0878-3856-1898',5.0,'29','07:00','21:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (10,'Laundry Express','Gg. Puntodewo, Terban, Kec. Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55223','0822-6060-6024',4.4,'62','07:00','20:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (11,'Fresh Laundry','Jl. Tri Brata No.11, Klitren, Kec. Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55222','0895-6041-15322',4.6,'9','08:00','18:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (12,'Mister Laundry Jogja','Jl. Raya Janti No.18B, Gowok, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55282','0896-0164-6111',4.1,'11','08:00','16:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (13,'CleanPro Express Laundry','Jl. Seturan Raya No.88, Ngropoh, Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281','0896-2853-4559',4.6,'214','00:00','00:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (14,'Panda Laundry Yogyakarta','Jl. Mrican Baru No.2, Mrican, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281','0811-2633-606',5.0,'3','09:00','18:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (15,'Central Laundry & Dry Clean','Jl. Nogopuro No.4b, Ambarukmo, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281','(0274) 489300',4.0,'30','07:00','22:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (16,'Melia Laundry','Jl. Sengon Jl. Raya Janti No.1, Ngentak, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281','0817-0728-887',4.2,'5','07:00','20:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (17,'Clean Pro Express Laundry Babarsari','Jl. Babarsari No.105, Kledokan, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281','0896-2853-4559',4.4,'175','00:00','00:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (18,'DLaundry Express','Jl. Hayam Wuruk No.2, Bausasran, Kec. Danurejan, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55212','0856-2896-470',4.5,'30','08:00','20:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (19,'King Laundry Jogja','Cobongan, Ngestiharjo, Kasihan, Bantul Regency, Special Region of Yogyakarta 55184','0812-1385-544',4.9,'90','00:00','00:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (20,'Rafa Laundry ex Laundry Zone Selokan Mataram','Ruko Mataram Niaga, Jl. Tantular Jl. Puren No.12E, Pringwulung, ConCat, Depok Sub-District, Sleman Regency, Special Region of Yogyakarta 55283','0812-2777-2748',4.3,'3','09:00','16:00');
+INSERT INTO ListLaundry(Id,Name,Alamat,No_Telepon,Rating,Jumlah_Reviewer,Jam_buka,Jam_tutup) VALUES (21,'Super laundry jogja 2','Jl. Delima No.5, Gempol, Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281','0812-2524-0474',5.0,'12','08:00','21:00');

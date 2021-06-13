@@ -1,0 +1,108 @@
+﻿@model LaunchdryMVP.Models.OrderModel
+
+@{
+    ViewBag.Title = "OrderDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detail Pemesanan</h2>
+
+<div>
+    <h4>@*OrderModel*@</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @*<dt>
+            @Html.DisplayNameFor(model => model.No)
+        </dt>*@
+
+        @*<dd>
+            @Html.DisplayFor(model => model.No)
+        </dd>*@
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Jenis_Layanan)*@
+            Jenis Layanan
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Jenis_Layanan)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Jenis_Pakaian)*@
+            Jenis Pakaian
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Jenis_Pakaian)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Tanggal_Masuk)*@
+            Tanggal Ambil
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tanggal_Masuk)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Tanggal_Ambil)*@
+            Tanggal Masuk
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tanggal_Ambil)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Metode_Pembayaran)*@
+            Metode Pembayaran
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Metode_Pembayaran)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Berat_Perkiraan)*@
+            Berat Perkiraan
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Berat_Perkiraan)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Status)*@
+            Status
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Alamat_Pengantaran)*@
+            Alamat Pengantaran
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Alamat_Pengantaran)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Biaya)*@
+            Biaya
+        </dt>
+        <dd>
+            Rp @Html.DisplayFor(model => model.Biaya)
+        </dd>
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Kembali", "Order")
+</p>

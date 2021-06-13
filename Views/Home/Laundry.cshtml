@@ -1,0 +1,75 @@
+﻿@model IEnumerable<LaunchdryMVP.Models.LaundryModel>
+
+@{
+    ViewBag.Title = "Laundry";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Laundry</h2>
+
+<p>
+    Pilih Laundry favoritmu!
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Name)*@
+            Nama
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Alamat)
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.No_Telepon)*@
+            No Telp
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Jumlah_Reviewer)*@
+            Reviewer
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Jam_buka)*@
+            Jam buka
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Jam_tutup)*@
+            Jam tutup
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Alamat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.No_Telepon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rating)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Jumlah_Reviewer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Jam_buka)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Jam_tutup)
+        </td>
+        <td>
+            @Html.ActionLink("Pesan", "Create", new { id=item.ID }) 
+            @*@Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })*@
+        </td>
+    </tr>
+}
+
+</table>

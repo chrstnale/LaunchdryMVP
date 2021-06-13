@@ -1,0 +1,94 @@
+﻿@model IEnumerable<LaunchdryMVP.Models.OrderModel>
+
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Pesanan kamu</h2>
+
+<p>
+    @Html.ActionLink("Buat Pesanan Baru", "Laundry")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.No)
+        </th>*@
+        <th>
+            @*@Html.DisplayNameFor(model => model.Jenis_Layanan)*@
+            Jenis Layanan
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Jenis_Pakaian)*@
+            Jenis Pakaian
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Tanggal_Masuk)*@
+            Tanggal Ambil
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Tanggal_Ambil)*@
+            Tanggal Masuk
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Metode_Pembayaran)*@
+            Metode Pembayaran
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Berat_Perkiraan)*@
+            Berat Perkiraan
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Alamat_Pengantaran)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Biaya)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    @*<td>
+            @Html.DisplayFor(modelItem => item.No)
+        </td>*@
+    <td>
+        @Html.DisplayFor(modelItem => item.Jenis_Layanan)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Jenis_Pakaian)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Tanggal_Masuk)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Tanggal_Ambil)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Metode_Pembayaran)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Berat_Perkiraan)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Status)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Alamat_Pengantaran)
+    </td>
+    <td>
+        Rp @Html.DisplayFor(modelItem => item.Biaya)
+    </td>
+    <td>
+        @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |*@
+        @Html.ActionLink("Details", "Details", new { no = item.No }) |
+        @Html.ActionLink("Delete", "Delete", new { no = item.No })
+    </td>
+</tr>
+}
+
+</table>
